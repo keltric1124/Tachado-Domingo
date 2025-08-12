@@ -8,6 +8,10 @@ if (!$conn) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+$sql = "Select * from Students Where email = '$email' and password = '$password'";
+
+$result =  mysqli_query($conn, $sql);
 ?>
+
 
 
